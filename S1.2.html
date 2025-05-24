@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        let name = prompt("Enter your name:");
+let age = prompt("Enter your age:");
+let greetings;
+
+if (age < 15) {
+  greetings = "Hello!!  "  + name + " You are a kid,Have a funny day..";
+} 
+else if (age < 20) {
+  greetings = "Hello!!  "  + name + " You are a teenager, Have a greatful day..";
+} 
+else if (age < 60) {
+  greetings = "Hello!!  "  + name + "  You are an adult,Have a nice day..";
+} 
+else {
+  greetings = "Hello!!  "  + name +  "  You are a senior citizen,Have a healty day..";
+}
+alert(greetings);
+
+    </script>
+</body>
+</html>

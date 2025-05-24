@@ -1,0 +1,13 @@
+// fileReadWrite.js
+const fs = require('fs');
+// Read file
+fs.readFile('input.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log("File Content:", data);
+
+  // Write to new file
+  fs.writeFile('output.txt', data, (err) => {
+    if (err) throw err;
+    console.log('Data written to output.txt');
+  });
+});

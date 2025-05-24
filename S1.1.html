@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic operation</title>
+</head>
+<body>
+    <h1>Arithmetic operations</h1>
+    <script>
+        let n1 = prompt("Enter the first number:");
+let n2 = prompt("Enter the second number:");
+let operator = prompt("Enter an operator (+, -, *, /):");
+let ans;
+switch (operator) {
+  case "+":
+    ans = n1 + n2;
+    break;
+  case "-":
+    ans = n1 - n2;
+    break;
+  case "*":
+    ans = n1 * n2;
+    break;
+  case "/":
+    if (n2 !== 0) {
+      ans = n1 / n2;
+    } 
+    else {
+      ans = "Can't divide by 0";
+    }
+    break;
+  default:
+    ans = "Invalid operator!";
+}
+alert("ans: " + ans);
+    </script>
+</body>
+</html>
